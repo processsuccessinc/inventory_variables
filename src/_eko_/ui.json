@@ -2,28 +2,28 @@
     "apiVersion": "3.25.0-83",
     "guiControllers": [
         {
-            "id": "node_dropped_be1c27",
+            "id": "node_drop_be1c27",
             "type": "DECISION",
             "config": {
                 "showInNodes": [
-                    "node_dropped_be1c27"
+                    "node_drop_be1c27"
                 ],
                 "hideInNodesEnd": [
-                    "node_dropped_be1c27"
+                    "node_drop_be1c27"
                 ],
                 "userSelectionDisappearDelay": 2.5,
                 "autoSelectionDisappearDelay": 3.5
             }
         },
         {
-            "id": "node_picked_ad9e9b",
+            "id": "node_pick_ad9e9b",
             "type": "DECISION",
             "config": {
                 "showInNodes": [
-                    "node_picked_ad9e9b"
+                    "node_pick_ad9e9b"
                 ],
                 "hideInNodesEnd": [
-                    "node_picked_ad9e9b"
+                    "node_pick_ad9e9b"
                 ],
                 "userSelectionDisappearDelay": 2.5,
                 "autoSelectionDisappearDelay": 3.5
@@ -66,7 +66,7 @@
                 "config": {
                     "parentElement": "root",
                     "enableTransition": true,
-                    "stateSourceId": "node_dropped_be1c27",
+                    "stateSourceId": "node_drop_be1c27",
                     "fitToVideo": true,
                     "transitionInDuration": 0.60000002384186,
                     "transitionOutDuration": 0.60000002384186,
@@ -82,7 +82,7 @@
             "id": "timer_put_50f2a9",
             "props": {
                 "config": {
-                    "stateSourceId": "node_dropped_be1c27",
+                    "stateSourceId": "node_drop_be1c27",
                     "parentElement": null,
                     "enableTransition": false,
                     "text": "Timer1",
@@ -109,7 +109,7 @@
             "id": "button_put_8ab826",
             "props": {
                 "config": {
-                    "stateSourceId": "node_dropped_be1c27",
+                    "stateSourceId": "node_drop_be1c27",
                     "parentElement": null,
                     "enableTransition": false,
                     "text": "blank",
@@ -136,7 +136,7 @@
                     "handlers": [
                         {
                             "type": "DECISION_SELECT",
-                            "decisionId": "node_dropped_be1c27",
+                            "decisionId": "node_drop_be1c27",
                             "targetNode": "node_blank_613ae5",
                             "connectOn": "NODE_END"
                         },
@@ -169,7 +169,7 @@
             "id": "button_put_596f14",
             "props": {
                 "config": {
-                    "stateSourceId": "node_dropped_be1c27",
+                    "stateSourceId": "node_drop_be1c27",
                     "parentElement": null,
                     "enableTransition": false,
                     "text": "Fruits on table",
@@ -196,7 +196,7 @@
                     "handlers": [
                         {
                             "type": "DECISION_SELECT",
-                            "decisionId": "node_dropped_be1c27",
+                            "decisionId": "node_drop_be1c27",
                             "targetNode": "node_fruits_on_table_2430df",
                             "connectOn": "NODE_END"
                         },
@@ -232,13 +232,12 @@
                 "config": {
                     "parentElement": "root",
                     "enableTransition": true,
-                    "stateSourceId": "node_picked_ad9e9b",
+                    "stateSourceId": "node_pick_ad9e9b",
                     "fitToVideo": true,
                     "transitionInDuration": 0.60000002384186,
                     "transitionOutDuration": 0.60000002384186,
                     "children": [
                         "timer_pick_cc7d0c",
-                        "button_pick_62c832",
                         "button_pick_d95bcd"
                     ]
                 }
@@ -248,7 +247,7 @@
             "id": "timer_pick_cc7d0c",
             "props": {
                 "config": {
-                    "stateSourceId": "node_picked_ad9e9b",
+                    "stateSourceId": "node_pick_ad9e9b",
                     "parentElement": null,
                     "enableTransition": false,
                     "text": "Timer1",
@@ -257,7 +256,7 @@
                         "left": 759,
                         "width": "60px",
                         "height": "60px",
-                        "visibility": "visible",
+                        "visibility": "hidden",
                         "opacity": 1,
                         "transform": "rotate(0deg)",
                         "transformOrigin": "0 0",
@@ -272,70 +271,10 @@
             "component": "LegacyPureTimer"
         },
         {
-            "id": "button_pick_62c832",
-            "props": {
-                "config": {
-                    "stateSourceId": "node_picked_ad9e9b",
-                    "parentElement": null,
-                    "enableTransition": false,
-                    "text": "Drop clemantine",
-                    "style": {
-                        "top": 300,
-                        "left": 100,
-                        "width": "258px",
-                        "height": "64px",
-                        "visibility": "visible",
-                        "opacity": 1,
-                        "transform": "rotate(0deg)",
-                        "transformOrigin": "0 0",
-                        "--color": "#61C9DB",
-                        "--font": "Dosis",
-                        "--font-size": "26px",
-                        "--text-color": "#ffffff",
-                        "--line-height": "26px",
-                        "--letter-spacing": "1",
-                        "--text-align": "center",
-                        "--text-box-align": "center",
-                        "--text-box-vertical-align": "center",
-                        "--word-wrap": "nowrap"
-                    },
-                    "handlers": [
-                        {
-                            "type": "DECISION_SELECT",
-                            "decisionId": "node_picked_ad9e9b",
-                            "targetNode": "node_dropped_be1c27",
-                            "connectOn": "NODE_END"
-                        },
-                        {
-                            "type": "PLAY_SOUND",
-                            "audioId": "audio_ding_sound_82f202"
-                        },
-                        {
-                            "type": "REPORT_INTERACTION",
-                            "id": "button_pick_62c832",
-                            "data": {
-
-                            },
-                            "options": {
-                                "trackAnalytics": true,
-                                "analyticsData": {
-                                    "interactionElementName": "button_pick_62c832",
-                                    "interactionTriggerType": "click",
-                                    "interactionActionType": "decision",
-                                    "interactionSelectedNodeId": "node_dropped_be1c27"
-                                }
-                            }
-                        }
-                    ]
-                }
-            },
-            "component": "LegacyFunRoundButton"
-        },
-        {
             "id": "button_pick_d95bcd",
             "props": {
                 "config": {
-                    "stateSourceId": "node_picked_ad9e9b",
+                    "stateSourceId": "node_pick_ad9e9b",
                     "parentElement": null,
                     "enableTransition": false,
                     "text": "blank",
@@ -362,7 +301,7 @@
                     "handlers": [
                         {
                             "type": "DECISION_SELECT",
-                            "decisionId": "node_picked_ad9e9b",
+                            "decisionId": "node_pick_ad9e9b",
                             "targetNode": "node_blank_613ae5",
                             "connectOn": "NODE_END"
                         },
@@ -470,7 +409,7 @@
                             "type": "DECISION_SELECT",
                             "decisionId": "node_fruits_on_table_2430df",
                             "connectOn": "NODE_END",
-                            "targetNode": "node_picked_ad9e9b"
+                            "targetNode": "node_pick_ad9e9b"
                         },
                         {
                             "type": "PLAY_SOUND",
@@ -488,7 +427,7 @@
                                     "interactionElementName": "button_fruits_on_table_e3bdbd",
                                     "interactionTriggerType": "click",
                                     "interactionActionType": "decision",
-                                    "interactionSelectedNodeId": "node_picked_ad9e9b"
+                                    "interactionSelectedNodeId": "node_pick_ad9e9b"
                                 }
                             }
                         }
@@ -695,7 +634,7 @@
                         {
                             "type": "DECISION_SELECT",
                             "decisionId": "node_blank_613ae5",
-                            "targetNode": "node_dropped_be1c27",
+                            "targetNode": "node_drop_be1c27",
                             "connectOn": "NODE_END"
                         },
                         {
@@ -714,7 +653,7 @@
                                     "interactionElementName": "button_blank_0cbf40",
                                     "interactionTriggerType": "click",
                                     "interactionActionType": "decision",
-                                    "interactionSelectedNodeId": "node_dropped_be1c27"
+                                    "interactionSelectedNodeId": "node_drop_be1c27"
                                 }
                             }
                         }

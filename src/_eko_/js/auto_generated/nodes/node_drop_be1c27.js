@@ -1,17 +1,17 @@
 import ivds from '../ivds.js';
 export default {
-    id: 'node_fruits_on_table_2430df',
-    source: ivds.vid_video_fruits_ff44d8,
+    id: 'node_drop_be1c27',
+    source: ivds.vid_video_put_941d54,
     data: {
                     insights: {
-                uid: '5c24a08e-0aec-4821-b03c-750df36892c6'
+                uid: '516dee70-09cf-11e9-8b90-e9613f98a402'
                             },
                             decision: {
                 startTime: 1,
                  
-                    endTime: 5.605,
+                    endTime: 5.939,
                                 children: [
-                                    'node_pick_ad9e9b'
+                                    'node_blank_613ae5'
                      ,                                     'node_fruits_on_table_2430df'
                                                     ],
                 defaults: [

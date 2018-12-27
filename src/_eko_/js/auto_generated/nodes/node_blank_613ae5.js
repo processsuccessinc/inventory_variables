@@ -12,7 +12,7 @@ export default {
                     endTime: 6.022,
                                 children: [
                                     'node_blank_613ae5'
-                     ,                                     'node_dropped_be1c27'
+                     ,                                     'node_drop_be1c27'
                                                     ],
                 defaults: [
                                     'node_blank_613ae5'
