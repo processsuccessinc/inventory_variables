@@ -1,10 +1,22 @@
 import playerOptions from '../config/playerOptions.json';
+import Inventory from '../components/Inventory';
 
 export default {
     onLoad: function(ctx) {},
 
     onInit: function(player, ctx) {
-        // See https://developer.helloeko.com for API documentation. Place your code here:
+        player.ui.add('inventory', Inventory);
+        player.variables.register({
+            name: 'inventory',
+            initialValue: 0,
+            updateOn: 'nodestart',
+            resetOn: 'playlistreset',
+            dataSet: {
+                node_blank_613ae5: 1,
+                node_put_be1c27: 0
+            }
+        });
+        
     },
 
     playerOptions

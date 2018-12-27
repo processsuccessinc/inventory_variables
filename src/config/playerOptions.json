@@ -1,5 +1,9 @@
 {
     "plugins": {
-        
+        "ekoshell": {
+            "projectInfo": {
+                "title": "Variables Plugin Example"
+            }
+        }
     }
 }
