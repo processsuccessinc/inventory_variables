@@ -1,7 +1,7 @@
 import ivds from '../ivds.js';
 export default {
     id: 'node_open_fridge_ad9e9b',
-    source: ivds.vid_video_placeholder_12sec,
+    source: ivds.vid_video_blank_dbb67d,
     data: {
                     insights: {
                 uid: '5c24a08e-03f4-4459-80f0-750df36892c6'
@@ -9,7 +9,7 @@ export default {
                             decision: {
                 startTime: 1,
                  
-                    endTime: 3.514,
+                    endTime: 6.022,
                                 children: [
                                     'node_go_to_eat_411866'
                      ,                                     'node_pick_orange_be1c27'

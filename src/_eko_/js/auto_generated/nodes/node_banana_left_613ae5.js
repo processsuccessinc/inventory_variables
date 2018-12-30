@@ -1,7 +1,7 @@
 import ivds from '../ivds.js';
 export default {
     id: 'node_banana_left_613ae5',
-    source: ivds.vid_video_placeholder_12sec,
+    source: ivds.vid_video_blank_dbb67d,
     data: {
                     insights: {
                 uid: '778ee140-09d4-11e9-8b90-e9613f98a402'
