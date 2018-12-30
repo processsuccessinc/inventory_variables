@@ -9,10 +9,12 @@ export default {
                             decision: {
                 startTime: 1,
                                 children: [
-                                    'node_pick_orange_132886'
+                                    'node_go_to_eat_411866'
+                     ,                                     'node_pick_orange_132886'
                                                     ],
                 defaults: [
-                                    'node_pick_orange_132886'
+                                    'node_go_to_eat_411866'
+                     ,                                     'node_pick_orange_132886'
                                                     ],
                 _channelsDefaults: [
                                 ]

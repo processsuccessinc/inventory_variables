@@ -11,11 +11,13 @@ export default {
                  
                     endTime: 3.514,
                                 children: [
-                                    'node_pick_orange_be1c27'
+                                    'node_go_to_eat_411866'
+                     ,                                     'node_pick_orange_be1c27'
                      ,                                     'node_pick_banana_f831a8'
                                                     ],
                 defaults: [
-                                    'node_pick_orange_be1c27'
+                                    'node_go_to_eat_411866'
+                     ,                                     'node_pick_orange_be1c27'
                      ,                                     'node_pick_banana_f831a8'
                                                     ],
                 _channelsDefaults: [

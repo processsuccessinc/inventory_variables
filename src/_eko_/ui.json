@@ -262,7 +262,8 @@
                     "children": [
                         "timer_open_fridge_efa92d",
                         "button_open_fridge_dae744",
-                        "button_open_fridge_b9ac5e"
+                        "button_open_fridge_b9ac5e",
+                        "button_open_fridge_a306c6"
                     ]
                 }
             }
@@ -415,6 +416,66 @@
             "component": "LegacyDefaultButton"
         },
         {
+            "id": "button_open_fridge_a306c6",
+            "props": {
+                "config": {
+                    "stateSourceId": "node_open_fridge_ad9e9b",
+                    "parentElement": null,
+                    "enableTransition": false,
+                    "text": "Go to eat",
+                    "style": {
+                        "top": 40,
+                        "left": 40,
+                        "width": "146px",
+                        "height": "46px",
+                        "visibility": "visible",
+                        "opacity": 1,
+                        "transform": "rotate(0deg)",
+                        "transformOrigin": "0 0",
+                        "--color": "#61C9DB",
+                        "--font": "Roboto Slab",
+                        "--font-size": "26px",
+                        "--text-color": "#ffffff",
+                        "--line-height": "26px",
+                        "--letter-spacing": "1",
+                        "--text-align": "center",
+                        "--text-box-align": "center",
+                        "--text-box-vertical-align": "center",
+                        "--word-wrap": "nowrap"
+                    },
+                    "handlers": [
+                        {
+                            "type": "DECISION_SELECT",
+                            "decisionId": "node_open_fridge_ad9e9b",
+                            "targetNode": "node_go_to_eat_411866",
+                            "connectOn": "NODE_END"
+                        },
+                        {
+                            "type": "PLAY_SOUND",
+                            "audioId": "audio_ding_sound_82f202"
+                        },
+                        {
+                            "type": "REPORT_INTERACTION",
+                            "id": "button_open_fridge_a306c6",
+                            "data": {
+
+                            },
+                            "options": {
+                                "trackAnalytics": true,
+                                "analyticsData": {
+                                    "interactionElementName": "button_open_fridge_a306c6",
+                                    "interactionTriggerType": "click",
+                                    "interactionActionType": "decision",
+                                    "interactionSelectedNodeId": "node_go_to_eat_411866"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "component": "LegacyDefaultButton"
+        },
+        {
             "id": "5c24a08f-9d5c-4c4d-bd6e-750df36892c6",
             "component": "EkoGroup",
             "props": {
@@ -532,7 +593,8 @@
                     "transitionOutDuration": 0.60000002384186,
                     "children": [
                         "timer_banana_left_386704",
-                        "button_banana_left_7bb3ac"
+                        "button_banana_left_7bb3ac",
+                        "button_banana_left_810c47"
                     ]
                 }
             }
@@ -550,7 +612,7 @@
                         "left": 10,
                         "width": "60px",
                         "height": "60px",
-                        "visibility": "hidden",
+                        "visibility": "visible",
                         "opacity": 1,
                         "transform": "rotate(0deg)",
                         "transformOrigin": "0 0",
@@ -577,7 +639,7 @@
                         "left": 20,
                         "width": "110px",
                         "height": "46px",
-                        "visibility": "hidden",
+                        "visibility": "visible",
                         "opacity": 1,
                         "transform": "rotate(0deg)",
                         "transformOrigin": "0 0",
@@ -616,6 +678,66 @@
                                     "interactionTriggerType": "click",
                                     "interactionActionType": "decision",
                                     "interactionSelectedNodeId": "node_pick_banana_ff7307"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "component": "LegacyDefaultButton"
+        },
+        {
+            "id": "button_banana_left_810c47",
+            "props": {
+                "config": {
+                    "stateSourceId": "node_banana_left_613ae5",
+                    "parentElement": null,
+                    "enableTransition": false,
+                    "text": "Go to eat",
+                    "style": {
+                        "top": 30,
+                        "left": 30,
+                        "width": "146px",
+                        "height": "46px",
+                        "visibility": "visible",
+                        "opacity": 1,
+                        "transform": "rotate(0deg)",
+                        "transformOrigin": "0 0",
+                        "--color": "#61C9DB",
+                        "--font": "Roboto Slab",
+                        "--font-size": "26px",
+                        "--text-color": "#ffffff",
+                        "--line-height": "26px",
+                        "--letter-spacing": "1",
+                        "--text-align": "center",
+                        "--text-box-align": "center",
+                        "--text-box-vertical-align": "center",
+                        "--word-wrap": "nowrap"
+                    },
+                    "handlers": [
+                        {
+                            "type": "DECISION_SELECT",
+                            "decisionId": "node_banana_left_613ae5",
+                            "targetNode": "node_go_to_eat_411866",
+                            "connectOn": "NODE_END"
+                        },
+                        {
+                            "type": "PLAY_SOUND",
+                            "audioId": "audio_ding_sound_82f202"
+                        },
+                        {
+                            "type": "REPORT_INTERACTION",
+                            "id": "button_banana_left_810c47",
+                            "data": {
+
+                            },
+                            "options": {
+                                "trackAnalytics": true,
+                                "analyticsData": {
+                                    "interactionElementName": "button_banana_left_810c47",
+                                    "interactionTriggerType": "click",
+                                    "interactionActionType": "decision",
+                                    "interactionSelectedNodeId": "node_go_to_eat_411866"
                                 }
                             }
                         }
@@ -742,7 +864,8 @@
                     "transitionOutDuration": 0.60000002384186,
                     "children": [
                         "timer_orange_left_e5b53f",
-                        "button_orange_left_3d6acb"
+                        "button_orange_left_3d6acb",
+                        "button_orange_left_699787"
                     ]
                 }
             }
@@ -760,7 +883,7 @@
                         "left": 759,
                         "width": "60px",
                         "height": "60px",
-                        "visibility": "hidden",
+                        "visibility": "visible",
                         "opacity": 1,
                         "transform": "rotate(0deg)",
                         "transformOrigin": "0 0",
@@ -784,10 +907,10 @@
                     "text": "Pick orange",
                     "style": {
                         "top": 334,
-                        "left": 358,
+                        "left": 231,
                         "width": "188px",
                         "height": "46px",
-                        "visibility": "hidden",
+                        "visibility": "visible",
                         "opacity": 1,
                         "transform": "rotate(0deg)",
                         "transformOrigin": "0 0",
@@ -826,6 +949,66 @@
                                     "interactionTriggerType": "click",
                                     "interactionActionType": "decision",
                                     "interactionSelectedNodeId": "node_pick_orange_132886"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "component": "LegacyDefaultButton"
+        },
+        {
+            "id": "button_orange_left_699787",
+            "props": {
+                "config": {
+                    "stateSourceId": "node_orange_left_cf47c4",
+                    "parentElement": null,
+                    "enableTransition": false,
+                    "text": "Go to eat",
+                    "style": {
+                        "top": 334,
+                        "left": 449,
+                        "width": "146px",
+                        "height": "46px",
+                        "visibility": "visible",
+                        "opacity": 1,
+                        "transform": "rotate(0deg)",
+                        "transformOrigin": "0 0",
+                        "--color": "#61C9DB",
+                        "--font": "Roboto Slab",
+                        "--font-size": "26px",
+                        "--text-color": "#ffffff",
+                        "--line-height": "26px",
+                        "--letter-spacing": "1",
+                        "--text-align": "center",
+                        "--text-box-align": "center",
+                        "--text-box-vertical-align": "center",
+                        "--word-wrap": "nowrap"
+                    },
+                    "handlers": [
+                        {
+                            "type": "DECISION_SELECT",
+                            "decisionId": "node_orange_left_cf47c4",
+                            "targetNode": "node_go_to_eat_411866",
+                            "connectOn": "NODE_END"
+                        },
+                        {
+                            "type": "PLAY_SOUND",
+                            "audioId": "audio_ding_sound_82f202"
+                        },
+                        {
+                            "type": "REPORT_INTERACTION",
+                            "id": "button_orange_left_699787",
+                            "data": {
+
+                            },
+                            "options": {
+                                "trackAnalytics": true,
+                                "analyticsData": {
+                                    "interactionElementName": "button_orange_left_699787",
+                                    "interactionTriggerType": "click",
+                                    "interactionActionType": "decision",
+                                    "interactionSelectedNodeId": "node_go_to_eat_411866"
                                 }
                             }
                         }

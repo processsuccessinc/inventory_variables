@@ -11,10 +11,12 @@ export default {
                  
                     endTime: 6.022,
                                 children: [
-                                    'node_pick_banana_ff7307'
+                                    'node_go_to_eat_411866'
+                     ,                                     'node_pick_banana_ff7307'
                                                     ],
                 defaults: [
-                                    'node_pick_banana_ff7307'
+                                    'node_go_to_eat_411866'
+                     ,                                     'node_pick_banana_ff7307'
                                                     ],
                 _channelsDefaults: [
                                 ]
