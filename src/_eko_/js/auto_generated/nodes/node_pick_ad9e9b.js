@@ -9,7 +9,7 @@ export default {
                             decision: {
                 startTime: 1,
                  
-                    endTime: 5.731,
+                    endTime: 3.514,
                                 children: [
                                     'node_blank_613ae5'
                                                     ],

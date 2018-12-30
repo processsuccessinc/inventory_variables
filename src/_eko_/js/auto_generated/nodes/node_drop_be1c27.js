@@ -11,8 +11,7 @@ export default {
                  
                     endTime: 5.939,
                                 children: [
-                                    'node_blank_613ae5'
-                     ,                                     'node_fruits_on_table_2430df'
+                                    'node_fruits_on_table_2430df'
                                                     ],
                 defaults: [
                                     'node_fruits_on_table_2430df'

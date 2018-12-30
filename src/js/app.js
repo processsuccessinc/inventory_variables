@@ -2,7 +2,7 @@ import playerOptions from '../config/playerOptions.json';
 import Inventory from '../components/Inventory';
 
 export default {
-    onLoad: function(ctx) { },
+    onLoad: function(ctx) {},
 
     onInit: function(player, ctx) {
         player.ui.add('inventory', Inventory);
