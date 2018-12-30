@@ -18,13 +18,14 @@ export default {
             }
         });
 
-        player.decision.add('finalFruitsInPlate', {
-            parent: 'node_eat_8f5498',
-            endTime: -4,
+        player.decision.add('node_eat_8f5498', {
             decider: function(parent, children, options) {
                 let inventory = player.variables.getValue('inventory');
-                let orange = inventory.include('orange');
-                let banana = inventory.include('banana');
+                let orange = inventory.includes('Orange');
+                let banana = inventory.includes('Banana');
+                console.log('inventory', inventory);
+                console.log('Banana:', banana);
+                console.log('Orange:', orange);
                 if(orange && banana) {
                     return 'node_orange_and_banana_on_plate_d91bab';
                 } else if(orange) {
