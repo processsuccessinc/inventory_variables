@@ -9,9 +9,11 @@ export default {
                             decision: {
                 startTime: 1,
                                 children: [
-                                ],
+                                    'node_fridge_empty_70b503'
+                                                    ],
                 defaults: [
-                                ],
+                                    'node_fridge_empty_70b503'
+                                                    ],
                 _channelsDefaults: [
                                 ]
             }

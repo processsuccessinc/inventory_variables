@@ -144,6 +144,111 @@
     ],
     "gui": [
         {
+            "id": "d71fb220-0c26-11e9-b919-f1e78db08c26",
+            "component": "EkoGroup",
+            "props": {
+                "config": {
+                    "parentElement": "root",
+                    "enableTransition": true,
+                    "stateSourceId": "node_fridge_empty_70b503",
+                    "fitToVideo": true,
+                    "transitionInDuration": 0.60000002384186,
+                    "transitionOutDuration": 0.60000002384186,
+                    "children": [
+                        "timer_fridge_empty_6f4be2",
+                        "button_fridge_empty_172de1"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "timer_fridge_empty_6f4be2",
+            "props": {
+                "config": {
+                    "stateSourceId": "node_fridge_empty_70b503",
+                    "parentElement": null,
+                    "enableTransition": false,
+                    "text": "Timer1",
+                    "style": {
+                        "top": 35,
+                        "left": 759,
+                        "width": "60px",
+                        "height": "60px",
+                        "visibility": "hidden",
+                        "opacity": 1,
+                        "transform": "rotate(0deg)",
+                        "transformOrigin": "0 0",
+                        "--font": "Nixie One",
+                        "--color": "#F3F4F4"
+                    },
+                    "handlers": [
+
+                    ]
+                }
+            },
+            "component": "LegacyPureTimer"
+        },
+        {
+            "id": "button_fridge_empty_172de1",
+            "props": {
+                "config": {
+                    "stateSourceId": "node_fridge_empty_70b503",
+                    "parentElement": null,
+                    "enableTransition": false,
+                    "text": "Fridge Empty",
+                    "style": {
+                        "top": 334,
+                        "left": 308,
+                        "width": "210px",
+                        "height": "46px",
+                        "visibility": "hidden",
+                        "opacity": 1,
+                        "transform": "rotate(0deg)",
+                        "transformOrigin": "0 0",
+                        "--color": "#61C9DB",
+                        "--font": "Roboto Slab",
+                        "--font-size": "26px",
+                        "--text-color": "#ffffff",
+                        "--line-height": "26px",
+                        "--letter-spacing": "1",
+                        "--text-align": "center",
+                        "--text-box-align": "center",
+                        "--text-box-vertical-align": "center",
+                        "--word-wrap": "nowrap"
+                    },
+                    "handlers": [
+                        {
+                            "type": "DECISION_SELECT",
+                            "decisionId": "node_fridge_empty_70b503",
+                            "targetNode": "node_fridge_empty_70b503",
+                            "connectOn": "NODE_END"
+                        },
+                        {
+                            "type": "PLAY_SOUND",
+                            "audioId": "audio_ding_sound_82f202"
+                        },
+                        {
+                            "type": "REPORT_INTERACTION",
+                            "id": "button_fridge_empty_172de1",
+                            "data": {
+
+                            },
+                            "options": {
+                                "trackAnalytics": true,
+                                "analyticsData": {
+                                    "interactionElementName": "button_fridge_empty_172de1",
+                                    "interactionTriggerType": "click",
+                                    "interactionActionType": "decision",
+                                    "interactionSelectedNodeId": "node_fridge_empty_70b503"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "component": "LegacyDefaultButton"
+        },
+        {
             "id": "f27eb390-09d3-11e9-8b90-e9613f98a402",
             "component": "EkoGroup",
             "props": {
@@ -263,7 +368,8 @@
                         "timer_open_fridge_efa92d",
                         "button_open_fridge_dae744",
                         "button_open_fridge_b9ac5e",
-                        "button_open_fridge_a306c6"
+                        "button_open_fridge_a306c6",
+                        "button_open_fridge_20b1fd"
                     ]
                 }
             }
@@ -476,6 +582,66 @@
             "component": "LegacyDefaultButton"
         },
         {
+            "id": "button_open_fridge_20b1fd",
+            "props": {
+                "config": {
+                    "stateSourceId": "node_open_fridge_ad9e9b",
+                    "parentElement": null,
+                    "enableTransition": false,
+                    "text": "Open fridge",
+                    "style": {
+                        "top": 20,
+                        "left": 20,
+                        "width": "186px",
+                        "height": "46px",
+                        "visibility": "hidden",
+                        "opacity": 1,
+                        "transform": "rotate(0deg)",
+                        "transformOrigin": "0 0",
+                        "--color": "#61C9DB",
+                        "--font": "Roboto Slab",
+                        "--font-size": "26px",
+                        "--text-color": "#ffffff",
+                        "--line-height": "26px",
+                        "--letter-spacing": "1",
+                        "--text-align": "center",
+                        "--text-box-align": "center",
+                        "--text-box-vertical-align": "center",
+                        "--word-wrap": "nowrap"
+                    },
+                    "handlers": [
+                        {
+                            "type": "DECISION_SELECT",
+                            "decisionId": "node_open_fridge_ad9e9b",
+                            "targetNode": "node_open_fridge_ad9e9b",
+                            "connectOn": "NODE_END"
+                        },
+                        {
+                            "type": "PLAY_SOUND",
+                            "audioId": "audio_ding_sound_82f202"
+                        },
+                        {
+                            "type": "REPORT_INTERACTION",
+                            "id": "button_open_fridge_20b1fd",
+                            "data": {
+
+                            },
+                            "options": {
+                                "trackAnalytics": true,
+                                "analyticsData": {
+                                    "interactionElementName": "button_open_fridge_20b1fd",
+                                    "interactionTriggerType": "click",
+                                    "interactionActionType": "decision",
+                                    "interactionSelectedNodeId": "node_open_fridge_ad9e9b"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "component": "LegacyDefaultButton"
+        },
+        {
             "id": "5c24a08f-9d5c-4c4d-bd6e-750df36892c6",
             "component": "EkoGroup",
             "props": {
@@ -594,7 +760,8 @@
                     "children": [
                         "timer_banana_left_386704",
                         "button_banana_left_7bb3ac",
-                        "button_banana_left_810c47"
+                        "button_banana_left_810c47",
+                        "button_banana_left_6fe439"
                     ]
                 }
             }
@@ -747,6 +914,66 @@
             "component": "LegacyDefaultButton"
         },
         {
+            "id": "button_banana_left_6fe439",
+            "props": {
+                "config": {
+                    "stateSourceId": "node_banana_left_613ae5",
+                    "parentElement": null,
+                    "enableTransition": false,
+                    "text": "Banana Left",
+                    "style": {
+                        "top": 20,
+                        "left": 20,
+                        "width": "189px",
+                        "height": "46px",
+                        "visibility": "hidden",
+                        "opacity": 1,
+                        "transform": "rotate(0deg)",
+                        "transformOrigin": "0 0",
+                        "--color": "#61C9DB",
+                        "--font": "Roboto Slab",
+                        "--font-size": "26px",
+                        "--text-color": "#ffffff",
+                        "--line-height": "26px",
+                        "--letter-spacing": "1",
+                        "--text-align": "center",
+                        "--text-box-align": "center",
+                        "--text-box-vertical-align": "center",
+                        "--word-wrap": "nowrap"
+                    },
+                    "handlers": [
+                        {
+                            "type": "DECISION_SELECT",
+                            "decisionId": "node_banana_left_613ae5",
+                            "targetNode": "node_banana_left_613ae5",
+                            "connectOn": "NODE_END"
+                        },
+                        {
+                            "type": "PLAY_SOUND",
+                            "audioId": "audio_ding_sound_82f202"
+                        },
+                        {
+                            "type": "REPORT_INTERACTION",
+                            "id": "button_banana_left_6fe439",
+                            "data": {
+
+                            },
+                            "options": {
+                                "trackAnalytics": true,
+                                "analyticsData": {
+                                    "interactionElementName": "button_banana_left_6fe439",
+                                    "interactionTriggerType": "click",
+                                    "interactionActionType": "decision",
+                                    "interactionSelectedNodeId": "node_banana_left_613ae5"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "component": "LegacyDefaultButton"
+        },
+        {
             "id": "977cfcd0-0c18-11e9-b919-f1e78db08c26",
             "component": "EkoGroup",
             "props": {
@@ -865,7 +1092,8 @@
                     "children": [
                         "timer_orange_left_e5b53f",
                         "button_orange_left_3d6acb",
-                        "button_orange_left_699787"
+                        "button_orange_left_699787",
+                        "button_orange_left_bbe6ba"
                     ]
                 }
             }
@@ -1009,6 +1237,66 @@
                                     "interactionTriggerType": "click",
                                     "interactionActionType": "decision",
                                     "interactionSelectedNodeId": "node_go_to_eat_411866"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "component": "LegacyDefaultButton"
+        },
+        {
+            "id": "button_orange_left_bbe6ba",
+            "props": {
+                "config": {
+                    "stateSourceId": "node_orange_left_cf47c4",
+                    "parentElement": null,
+                    "enableTransition": false,
+                    "text": "Orange left",
+                    "style": {
+                        "top": 10,
+                        "left": 10,
+                        "width": "178px",
+                        "height": "46px",
+                        "visibility": "hidden",
+                        "opacity": 1,
+                        "transform": "rotate(0deg)",
+                        "transformOrigin": "0 0",
+                        "--color": "#61C9DB",
+                        "--font": "Roboto Slab",
+                        "--font-size": "26px",
+                        "--text-color": "#ffffff",
+                        "--line-height": "26px",
+                        "--letter-spacing": "1",
+                        "--text-align": "center",
+                        "--text-box-align": "center",
+                        "--text-box-vertical-align": "center",
+                        "--word-wrap": "nowrap"
+                    },
+                    "handlers": [
+                        {
+                            "type": "DECISION_SELECT",
+                            "decisionId": "node_orange_left_cf47c4",
+                            "targetNode": "node_orange_left_cf47c4",
+                            "connectOn": "NODE_END"
+                        },
+                        {
+                            "type": "PLAY_SOUND",
+                            "audioId": "audio_ding_sound_82f202"
+                        },
+                        {
+                            "type": "REPORT_INTERACTION",
+                            "id": "button_orange_left_bbe6ba",
+                            "data": {
+
+                            },
+                            "options": {
+                                "trackAnalytics": true,
+                                "analyticsData": {
+                                    "interactionElementName": "button_orange_left_bbe6ba",
+                                    "interactionTriggerType": "click",
+                                    "interactionActionType": "decision",
+                                    "interactionSelectedNodeId": "node_orange_left_cf47c4"
                                 }
                             }
                         }
