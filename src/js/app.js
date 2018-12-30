@@ -13,7 +13,7 @@ export default {
             resetOn: 'playlistreset',
             dataSet: {
                 node_blank_613ae5: 1,
-                node_put_be1c27: 0
+                node_fruits_on_table_2430df: 0
             }
         });
         
