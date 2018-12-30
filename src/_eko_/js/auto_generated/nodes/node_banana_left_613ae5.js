@@ -11,12 +11,13 @@ export default {
                  
                     endTime: 6.022,
                                 children: [
-                                    'node_go_to_eat_411866'
-                     ,                                     'node_banana_left_613ae5'
+                                    'node_banana_left_613ae5'
                      ,                                     'node_pick_banana_ff7307'
+                     ,                                     'node_eat_8f5498'
                                                     ],
                 defaults: [
                                     'node_banana_left_613ae5'
+                     ,                                     'node_eat_8f5498'
                                                     ],
                 _channelsDefaults: [
                                 ]

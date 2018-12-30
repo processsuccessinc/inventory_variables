@@ -12,6 +12,7 @@ export default {
                     endTime: 6.022,
                                 children: [
                                     'node_fridge_empty_70b503'
+                     ,                                     'node_eat_8f5498'
                                                     ],
                 defaults: [
                                     'node_fridge_empty_70b503'
