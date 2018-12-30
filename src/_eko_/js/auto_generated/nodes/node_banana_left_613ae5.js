@@ -17,7 +17,6 @@ export default {
                                                     ],
                 defaults: [
                                     'node_banana_left_613ae5'
-                     ,                                     'node_eat_8f5498'
                                                     ],
                 _channelsDefaults: [
                                 ]
