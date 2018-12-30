@@ -17,6 +17,50 @@
     "sentry": {
       "mode": "production"
     },
+        "outline": {
+            "nodes": {
+                  "node_fridge_empty_70b503":
+          {
+                        "name": "Fridge Empty",
+            "title": "Fridge is empty",
+            "summary": "Fridge is empty"          } ,                   "node_pick_orange_be1c27":
+          {
+                        "name": "Pick Orange",
+            "title": "taking orange (from two)",
+            "summary": "Orange and Banana are inside, Taking the orange."          } ,                   "node_open_fridge_ad9e9b":
+          {
+                        "name": "Open fridge",
+            "title": "Fridge is open",
+            "summary": "Orange and Banana are found inside - loop"          } ,                   "node_closed_fridge_2430df":
+          {
+                        "name": "Closed Fridge",
+            "title": "Fridge closed",
+            "summary": "Fridge is closed and someone opens the door"          } ,                   "node_banana_left_613ae5":
+          {
+                        "name": "Banana Left",
+            "title": "Only banana in fridge",
+            "summary": "Only banana in fridge"          } ,                   "node_pick_banana_f831a8":
+          {
+                        "name": "Pick Banana",
+            "title": "taking orange (from two)",
+            "summary": "Orange and Banana are inside, Taking the banana."          } ,                   "node_orange_left_cf47c4":
+          {
+                        "name": "Orange left",
+            "title": "Only orange in fridge",
+            "summary": "Only orange in fridge"          } ,                   "node_go_to_eat_411866":
+          {
+                        "name": "Go to eat",
+            "title": "",
+            "summary": ""          } ,                   "node_pick_banana_ff7307":
+          {
+                        "name": "Pick Banana",
+            "title": "Taking banana (only banana in fridge)",
+            "summary": "Taking banana (only banana in fridge)"          } ,                   "node_pick_orange_132886":
+          {
+                        "name": "Pick orange",
+            "title": "Taking orange (only orange in fridge)",
+            "summary": "Taking orange (only orange in fridge)"          }                    }
+    },
         "analytics": {}
 
   },

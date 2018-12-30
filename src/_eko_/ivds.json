@@ -1,9 +1,7 @@
 {
     "inline": [
-                    "src/_eko_/ivds/video_put_941d54.ivd"
-             ,                    "src/_eko_/ivds/video_take_407023.ivd"
-             ,                    "src/_eko_/ivds/video_fruits_ff44d8.ivd"
-             ,                    "src/_eko_/ivds/video_blank_933798.ivd"
+                    "src/_eko_/ivds/video_placeholder_12sec.ivd"
+             ,                    "src/_eko_/ivds/video_placeholder_4sec.ivd"
                         ],
     "async": [
             ]

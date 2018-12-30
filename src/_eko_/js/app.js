@@ -5,7 +5,7 @@ import settings from '../config/settings.json';
 import playerOptions from '../config/playerOptions.json';
 
 let player;
-let head = 'node_fruits_on_table_2430df';
+let head = 'node_closed_fridge_2430df';
 
 // Project essentials.
 export default {
