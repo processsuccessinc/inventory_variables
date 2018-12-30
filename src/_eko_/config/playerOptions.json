@@ -31,11 +31,7 @@
           {
                         "name": "Open fridge",
             "title": "Fridge is open",
-            "summary": "Orange and Banana are found inside - loop"          } ,                   "node_closed_fridge_2430df":
-          {
-                        "name": "Closed Fridge",
-            "title": "Fridge closed",
-            "summary": "Fridge is closed and someone opens the door"          } ,                   "node_banana_left_613ae5":
+            "summary": "Orange and Banana are found inside - loop"          } ,                   "node_banana_left_613ae5":
           {
                         "name": "Banana Left",
             "title": "Only banana in fridge",
@@ -55,7 +51,23 @@
           {
                         "name": "Pick Banana",
             "title": "Taking banana (only banana in fridge)",
-            "summary": "Taking banana (only banana in fridge)"          } ,                   "node_pick_orange_132886":
+            "summary": "Taking banana (only banana in fridge)"          } ,                   "node_empty_plate_6342bf":
+          {
+                        "name": "Empty plate",
+            "title": "",
+            "summary": ""          } ,                   "node_orange_and_banana_on_plate_d91bab":
+          {
+                        "name": "orange and banana on plate",
+            "title": "",
+            "summary": ""          } ,                   "node_orange_on_plate_4c07f4":
+          {
+                        "name": "orange on plate",
+            "title": "",
+            "summary": ""          } ,                   "node_banana_on_plate_f573b4":
+          {
+                        "name": "banana on plate",
+            "title": "",
+            "summary": ""          } ,                   "node_pick_orange_132886":
           {
                         "name": "Pick orange",
             "title": "Taking orange (only orange in fridge)",

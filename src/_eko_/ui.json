@@ -128,6 +128,62 @@
             }
         },
         {
+            "id": "node_empty_plate_6342bf",
+            "type": "DECISION",
+            "config": {
+                "showInNodes": [
+                    "node_empty_plate_6342bf"
+                ],
+                "hideInNodesEnd": [
+                    "node_empty_plate_6342bf"
+                ],
+                "userSelectionDisappearDelay": 2.5,
+                "autoSelectionDisappearDelay": 3.5
+            }
+        },
+        {
+            "id": "node_orange_and_banana_on_plate_d91bab",
+            "type": "DECISION",
+            "config": {
+                "showInNodes": [
+                    "node_orange_and_banana_on_plate_d91bab"
+                ],
+                "hideInNodesEnd": [
+                    "node_orange_and_banana_on_plate_d91bab"
+                ],
+                "userSelectionDisappearDelay": 2.5,
+                "autoSelectionDisappearDelay": 3.5
+            }
+        },
+        {
+            "id": "node_orange_on_plate_4c07f4",
+            "type": "DECISION",
+            "config": {
+                "showInNodes": [
+                    "node_orange_on_plate_4c07f4"
+                ],
+                "hideInNodesEnd": [
+                    "node_orange_on_plate_4c07f4"
+                ],
+                "userSelectionDisappearDelay": 2.5,
+                "autoSelectionDisappearDelay": 3.5
+            }
+        },
+        {
+            "id": "node_banana_on_plate_f573b4",
+            "type": "DECISION",
+            "config": {
+                "showInNodes": [
+                    "node_banana_on_plate_f573b4"
+                ],
+                "hideInNodesEnd": [
+                    "node_banana_on_plate_f573b4"
+                ],
+                "userSelectionDisappearDelay": 2.5,
+                "autoSelectionDisappearDelay": 3.5
+            }
+        },
+        {
             "id": "node_pick_orange_132886",
             "type": "DECISION",
             "config": {
@@ -1304,6 +1360,50 @@
                 }
             },
             "component": "LegacyDefaultButton"
+        },
+        {
+            "id": "eb5114b0-0c2a-11e9-b919-f1e78db08c26",
+            "component": "EkoGroup",
+            "props": {
+                "config": {
+                    "parentElement": "root",
+                    "enableTransition": true,
+                    "stateSourceId": "node_go_to_eat_411866",
+                    "fitToVideo": true,
+                    "transitionInDuration": 0.60000002384186,
+                    "transitionOutDuration": 0.60000002384186,
+                    "children": [
+                        "timer_go_to_eat_19ef3a"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "timer_go_to_eat_19ef3a",
+            "props": {
+                "config": {
+                    "stateSourceId": "node_go_to_eat_411866",
+                    "parentElement": null,
+                    "enableTransition": false,
+                    "text": "Timer1",
+                    "style": {
+                        "top": 35,
+                        "left": 759,
+                        "width": "60px",
+                        "height": "60px",
+                        "visibility": "hidden",
+                        "opacity": 1,
+                        "transform": "rotate(0deg)",
+                        "transformOrigin": "0 0",
+                        "--font": "Nixie One",
+                        "--color": "#F3F4F4"
+                    },
+                    "handlers": [
+
+                    ]
+                }
+            },
+            "component": "LegacyPureTimer"
         },
         {
             "id": "000eb3b0-0c19-11e9-b919-f1e78db08c26",

@@ -9,9 +9,15 @@ export default {
                             decision: {
                 startTime: 1,
                                 children: [
-                                ],
+                                    'node_empty_plate_6342bf'
+                     ,                                     'node_orange_and_banana_on_plate_d91bab'
+                     ,                                     'node_orange_on_plate_4c07f4'
+                                                    ],
                 defaults: [
-                                ],
+                                    'node_empty_plate_6342bf'
+                     ,                                     'node_orange_and_banana_on_plate_d91bab'
+                     ,                                     'node_orange_on_plate_4c07f4'
+                                                    ],
                 _channelsDefaults: [
                                 ]
             }
