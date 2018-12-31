@@ -1,5 +1,5 @@
 {
-    "apiVersion": "3.25.0-83",
+    "apiVersion": "3.25.1-84",
     "guiControllers": [
         {
             "id": "node_fridge_empty_70b503",
@@ -550,7 +550,7 @@
                             "type": "DECISION_SELECT",
                             "decisionId": "node_open_fridge_ad9e9b",
                             "targetNode": "node_pick_orange_be1c27",
-                            "connectOn": "NODE_END"
+                            "connectOn": "CLICK"
                         },
                         {
                             "type": "PLAY_SOUND",
@@ -610,7 +610,7 @@
                             "type": "DECISION_SELECT",
                             "decisionId": "node_open_fridge_ad9e9b",
                             "targetNode": "node_pick_banana_f831a8",
-                            "connectOn": "NODE_END"
+                            "connectOn": "CLICK"
                         },
                         {
                             "type": "PLAY_SOUND",
@@ -858,7 +858,7 @@
                     "enableTransition": false,
                     "text": "Pick Banana",
                     "style": {
-                        "top": 368,
+                        "top": 370,
                         "left": 320,
                         "width": "220px",
                         "height": "46px",
@@ -882,7 +882,7 @@
                             "type": "DECISION_SELECT",
                             "decisionId": "node_banana_left_613ae5",
                             "targetNode": "node_pick_banana_ff7307",
-                            "connectOn": "NODE_END"
+                            "connectOn": "CLICK"
                         },
                         {
                             "type": "PLAY_SOUND",
