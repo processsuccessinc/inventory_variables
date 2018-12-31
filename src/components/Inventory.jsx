@@ -3,8 +3,8 @@ import orangeImg from '../assets/Orange.png';
 import bananaImg from '../assets/Banana.png';
 
 export default class Inventory extends React.Component {
-    // Here we will render the Inventory ui element
-    // It's contents are based on the variables plugin
+    // Here we will configure the Inventory ui element
+    // It's contents of the inventory are based on the variables plugin
     // The inventory variable is a decalred in app.js
     render() {
         // the icons are in the src/assets folder
@@ -20,9 +20,9 @@ export default class Inventory extends React.Component {
         let inventoryContents = [];
         inventory.forEach(element => {
             inventoryContents.push(
-            <td key={element}>
-                <img style={{width: '60px'}} src={assets[element]} />
-            </td>
+                <td key={element}>
+                    <img style={{width: '60px'}} src={assets[element]} />
+                </td>
             );
         });
 

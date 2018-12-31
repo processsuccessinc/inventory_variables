@@ -5,7 +5,10 @@ export default {
     onLoad: function(ctx) {},
 
     onInit: function(player, ctx) {
+        // add the inventory ui component
         player.ui.add('inventory', Inventory);
+
+        // register the inventory variable
         player.variables.register({
             name: 'inventory',
             initialValue: [],
@@ -18,14 +21,15 @@ export default {
             }
         });
 
+        // the last decision of the example is based on the inventory variable
+        // The plate contents that show up should be corresponding to what we have in our inventory
         player.decision.add('node_eat_8f5498', {
             decider: function(parent, children, options) {
                 let inventory = player.variables.getValue('inventory');
                 let orange = inventory.includes('Orange');
                 let banana = inventory.includes('Banana');
-                console.log('inventory', inventory);
-                console.log('Banana:', banana);
-                console.log('Orange:', orange);
+                
+                // Show the node with the right fruits
                 if(orange && banana) {
                     return 'node_orange_and_banana_on_plate_d91bab';
                 } else if(orange) {
@@ -35,7 +39,6 @@ export default {
                 } else {
                     return 'node_empty_plate_6342bf';
                 }
-
             }
         });
         
