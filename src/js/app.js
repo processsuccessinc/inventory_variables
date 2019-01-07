@@ -1,13 +1,28 @@
 import playerOptions from '../config/playerOptions.json';
-import Inventory from '../components/Inventory';
+import EkoUIComponents from 'EkoUIComponents';
+import Inventory from '../components/Inventory/Inventory';
 
 export default {
     onLoad: function(ctx) {},
 
     onInit: function(player, ctx) {
-        // add the inventory ui component
-        player.ui.add('inventory', Inventory);
+        // create a group and add the inventory ui component to it
 
+        // using the props paramater, we can control the styling of the component from here
+        player.ui.add('inventoryGroup', EkoUIComponents.EkoGroup, {
+                fitToVideo: true,
+                shouldShow: () => true, // always show the inventory group
+                children: [{
+                    id: 'inventory',
+                    component: Inventory,
+                    props: {
+                        style: {
+                            left: '30px',
+                            top: '200px'
+                        }
+                    }
+                }]
+            });
 
         // register the inventory variable
         // update the variable when the 'pick up' clip ends

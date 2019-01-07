@@ -1,0 +1,59 @@
+.inventory{
+	position: absolute;
+
+	.title {
+		color: black;
+		padding: 2px 5px;
+		background: rgba(255,255,255, 0.8);
+		font-size: 10px;
+		cursor: pointer;
+	}
+
+	.items {
+		display: flex;
+		padding: 10px;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		background: rgba(0,0,0, 0.3);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		max-height: 100px;
+		overflow: hidden;
+		transition: all 0.3s ease-out;
+
+		&.collapsed {
+			max-height: 0;
+			padding: 0 10px;
+		}
+
+		img {
+			width: 45px;
+			height: 45px;
+			transform: scale(0.1, 0.1);
+			opacity: 0;
+			transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s ease-out;
+
+			&.added{
+				opacity: 1;
+				transform: scale(1, 1);
+			}
+		}
+	}
+
+	.noFruit{
+		width: 100%;
+		position: absolute;
+		font-size: 10px;
+		color: white;
+		left: 50%;
+		top: 56%;
+		text-align: center;
+		opacity: 1;
+		transform: translateX(-50%) translateY(-50%);
+		transition: all 0.1s ease-out;
+
+		&.hidden{
+			opacity: 0;
+		}
+
+	}
+}
