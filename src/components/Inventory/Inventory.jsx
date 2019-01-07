@@ -1,7 +1,7 @@
 import React from 'react';
 import './Inventory.scss';
-import orangeImg from './Orange.png';
-import bananaImg from './Banana.png';
+import orangeImg from './orange.png';
+import bananaImg from './banana.png';
 
 // this UI component displays the status of our inventory
 // The logic of the inventory itself is defined in app.js
