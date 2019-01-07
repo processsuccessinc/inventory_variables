@@ -1,7 +1,7 @@
 {
-    "name": "EXAMPLE NAME",
+    "name": "inventory_variables",
     "version": "1.0.0",
-    "description": "EXAMPLE DESCRIPTION. PLEASE CHANGE THIS.",
+    "description": "Custom Inventory UI component using the variables plugin",
     "keywords": [],
     "author": "",
     "license": "ISC",
