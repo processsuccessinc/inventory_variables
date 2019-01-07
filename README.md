@@ -1,9 +1,9 @@
-# Eko Project
+# Variables plugin
 
-This is an Eko project. To learn how to interact with the code in the `src/` folder, see the [Eko Developer Documentation](https://developer.helloeko.com).
+This Eko code example shows how to implement a custom Inventory component with the [variables plugin](https://developer.helloeko.com/api/variables.html)
 
-This README is left as a place to leave helpful hints about developing and maintaining the project for yourself or for collaborators.
+Icons are displayed in the inventory after specific nodes. The library can also be toggled by the user on click.                                     
 
-## Developing the Project
+See it [live](https://developer.helloeko.com/examples/ui/variables.html)! 
 
-The `eko-cli` is the command line utility you will use for building and testing the project. To see a current list of functionalities for your local `eko-cli` command line utility installation, make sure the command line is installed and type `eko-cli help`.
+Learn more at the [Eko Developer](https://developer.helloeko.com) site!

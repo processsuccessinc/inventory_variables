@@ -46,12 +46,12 @@ export default class Inventory extends React.Component {
         let toggleText = inventoryOpen ? '-' : '+';
         
         return (
-            <div className='inventory'
+            <div className={`inventory ${inventoryOpen === false? 'collapsed':''}`}
                  style={Object.assign({}, this.props.style)} // allow customizing style from "outside"
                  onClick={()=>this.toggleCollapse()}
             >
                 <div className='title'>Inventory {toggleText}</div>
-                <div className={`items ${inventoryOpen === false? 'collapsed':''}`}>
+                <div className='items'>
                     {itemIcons}
                 </div>
                 <div className={`noFruit ${noItems?'':'hidden'}`}>No fruit yet!</div>
