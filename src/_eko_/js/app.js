@@ -5,7 +5,7 @@ import settings from '../config/settings.json';
 import playerOptions from '../config/playerOptions.json';
 
 let player;
-let head = 'node_closed_fridge_2430df';
+let head = 'node_orange_first_idle_abe8ee';
 
 // Project essentials.
 export default {
