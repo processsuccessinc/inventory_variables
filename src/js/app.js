@@ -17,7 +17,7 @@ export default {
                     component: Inventory,
                     props: {
                         style: {
-                            left: '30px',
+                            left: '100px',
                             top: '200px'
                         }
                     }
