@@ -8,6 +8,7 @@ export default {
         // add the inventory ui component
         player.ui.add('inventory', Inventory);
 
+
         // register the inventory variable
         // update the variable when the 'pick up' clip ends
         player.variables.register({

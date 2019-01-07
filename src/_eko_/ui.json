@@ -403,7 +403,7 @@
                             "type": "DECISION_SELECT",
                             "decisionId": "node_banana_first_took_banana_idle_91392e",
                             "targetNode": "node_banana_first_take_orange_e7f48e",
-                            "connectOn": "NODE_END"
+                            "connectOn": "CLICK"
                         },
                         {
                             "type": "PLAY_SOUND",
@@ -797,7 +797,7 @@
                             "type": "DECISION_SELECT",
                             "decisionId": "node_orange_first_took_orange_271820",
                             "targetNode": "node_orange_first_take_banana_46891d",
-                            "connectOn": "NODE_END"
+                            "connectOn": "CLICK"
                         },
                         {
                             "type": "PLAY_SOUND",
@@ -1148,7 +1148,7 @@
                             "type": "DECISION_SELECT",
                             "decisionId": "node_orange_first_idle_abe8ee",
                             "targetNode": "node_banana_first_take_banana_cb135e",
-                            "connectOn": "NODE_END"
+                            "connectOn": "CLICK"
                         },
                         {
                             "type": "PLAY_SOUND",
@@ -1209,7 +1209,7 @@
                             "type": "DECISION_SELECT",
                             "decisionId": "node_orange_first_idle_abe8ee",
                             "targetNode": "node_orange_first_take_orange_dbb620",
-                            "connectOn": "NODE_END"
+                            "connectOn": "CLICK"
                         },
                         {
                             "type": "PLAY_SOUND",
