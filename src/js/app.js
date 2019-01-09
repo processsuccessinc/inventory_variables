@@ -24,20 +24,25 @@ export default {
                 }]
             });
 
-        // register the inventory variable
-        // update the variable when the 'pick up' clip ends
-        player.variables.register({
-            name: 'inventory',
-            initialValue: [],
-            updateOn: 'nodeend',
-            resetOn: 'playlistreset',
-            dataSet: {
-                node_orange_first_take_orange_dbb620: ['Orange'],
-                node_banana_first_take_banana_cb135e: ['Banana'],
-                node_orange_first_take_banana_46891d: ['Orange', 'Banana'],
-                node_banana_first_take_orange_e7f48e: ['Orange', 'Banana']
-            }
-        });
+        // register the inventory variable with initial empty state
+        player.variables.register('inventory',{ initialValue: [] });
+
+        // mapping between the node id and the corresponding inventory value
+        const inventoryUpdates = {
+            node_orange_first_take_orange_dbb620: ['Orange'],
+            node_banana_first_take_banana_cb135e: ['Banana'],
+            node_orange_first_take_banana_46891d: ['Orange', 'Banana'],
+            node_banana_first_take_orange_e7f48e: ['Orange', 'Banana']
+        };
+
+        Object.keys(inventoryUpdates)
+        // Map them to an array of node objects
+            .map(nodeId => player.repository.get(nodeId))
+            // Attach a "playlistpush" listener to each of the nodes
+            .forEach(node => {
+                // update the variable when the 'pick up' clip ends
+                node.on('nodeend', () => player.variables.setValue('inventory', inventoryUpdates[node.id]));
+            });
 
     },
     
