@@ -1,6 +1,6 @@
 import playerOptions from '../config/playerOptions.json';
 import EkoUIComponents from 'EkoUIComponents';
-import Inventory from '../components/Inventory/Inventory';
+import Inventory from './components/Inventory/Inventory';
 
 export default {
     onLoad: function(ctx) {},
